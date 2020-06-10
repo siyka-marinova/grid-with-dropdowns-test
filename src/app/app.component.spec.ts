@@ -78,6 +78,7 @@ describe('AppComponent', () => {
 
     const dropdownlist: any = fixture.debugElement.query(By.css('kendo-dropdownlist')).componentInstance;
     dropdownlist.onKeyPress({ charCode: 'm'.charCodeAt(0) });
+    // dropdownlist.selectionService.select(2); // set value without using the keyboard
 
     fixture.detectChanges();
 
