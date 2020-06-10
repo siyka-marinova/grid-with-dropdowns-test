@@ -25,7 +25,7 @@ describe('workspace-project App', () => {
     expect(await element(gridToolbarDropdownSpanSelector).getText()).toEqual('Medium');
   });
 
-  fit('should select an item from the dropdown in the grid cells', async () => {
+  it('should select an item from the dropdown in the grid cells', async () => {
     await page.navigateTo();
     await selectCell(1, 1);
     await browser
